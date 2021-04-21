@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wbc.word.mapper.GoodsMapper">
+	<select id="selectGoodsAll" resultType="goods">
+		select * from goods
+	</select>
+	
+	<select id="selectGoodsByuser"  resultType="goods">
+	    select * from goods where userid=#{value}
+	</select>
+</mapper>

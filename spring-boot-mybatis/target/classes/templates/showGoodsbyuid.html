@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>展示商品</title>
+</head>
+<body>
+	<table border="1" style="width:300px;">
+		<tr>
+			<th>ID</th>
+			<th>商品名</th>
+			<th>价格</th>
+		    <th>类型</th>
+		  
+		</tr>
+		<tr th:each="good : ${list}">
+			<td th:text="${good.id}"></td>
+			<td th:text="${good.name}"></td>
+			<td th:text="${good.price}"></td>
+			<td th:text="${good.type}"></td>
+		</tr>
+	</table>
+</body>
+</html>
